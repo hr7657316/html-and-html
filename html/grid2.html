@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning grid</title>
+    <style type="text/css">
+        .one{grid-area:header;}
+        .two{grid-area:left;}
+        .three{grid-area:center;}
+        .four{grid-area:right;}
+        .five{grid-area:footer;}
+        
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'header header header header header header '
+            ' left center  center center right right'
+            'left footer footer footer footer footer';
+            gap: 10px;
+            padding: 5px;
+             
+
+
+
+
+
+        }
+        .grid-container> div{
+            background-color:yellow ;
+            text-align: center;
+            font-size: 40px;
+            padding: 15px 0px;
+            
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+</head>
+<body style="background-image:url(https://i.ytimg.com/vi/6lt2JfJdGSY/maxresdefault.jpg);">
+    
+
+    <h1>Learning grid</h1>
+    <p> Today we have html class  in 34 block.</p>
+    <div class="grid-container">
+        <div class="one"> header</div>
+        <div class="two">left
+        <ol>
+            <li>himanshu</li>
+            <li>hyper text markup language</li>
+            <li>python</li>
+            <li>cryptocurrency</li>
+        </ol>
+        </div>
+
+        <div class="three">Center</div>
+        <div class="four">right</div>
+        <div class="five">footer</div>
+        
+    
+
+
+
+
+    </div>
+
+    
+</body>
+</html>
